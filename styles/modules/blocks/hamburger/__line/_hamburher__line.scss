@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .hamburger__line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color-main);
+    margin-bottom: 5px;
+    transition: 0.5s all;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+

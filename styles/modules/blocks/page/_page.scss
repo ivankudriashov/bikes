@@ -1,0 +1,17 @@
+.page {
+  --text-color-main: #151515;
+  --text-color-secondary: #222222;
+  --line-color: #D7D4D4;
+  --opacity-hover: 0.75;
+  --background-color: #F4F4F4;
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+
+}

@@ -1,0 +1,16 @@
+.header__menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-color-main);
+  text-decoration: none;
+  &:hover {
+    opacity: var(--opacity-hover);
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu-link {
+    font-size: 18px;
+  }
+}
