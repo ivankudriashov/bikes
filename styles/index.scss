@@ -1,6 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import '../styles/modules/libs/slick';
+@import '../styles/modules/libs/slider';
 
 @import '../styles/modules/blocks/page/page';
 @import '../styles/modules/blocks/page/__block-centering/page__block-centering';
@@ -94,3 +94,10 @@
 @import '../styles/modules/blocks/bike/__link/bike__link';
 @import '../styles/modules/blocks/bike/__img/bike__img';
 @import '../styles/modules/blocks/bike/__title/bike__title';
+
+@import '../styles/modules/blocks/theme/theme';
+@import '../styles/modules/blocks/theme/__sun/theme__sun';
+@import '../styles/modules/blocks/theme/__switcher/theme__switcher';
+@import '../styles/modules/blocks/theme/__switcher/_active/theme__switcher_active';
+@import '../styles/modules/blocks/theme/__round/theme__round';
+@import '../styles/modules/blocks/theme/__moon/theme__moon';

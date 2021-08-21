@@ -1,18 +1,17 @@
 .road {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
 
+
+  max-width: 1440px; */
+  box-sizing: border-box;
   padding-left: 120px;
   padding-bottom: 220px;
-  box-sizing: border-box;
-  max-width: 1440px;
-  overflow: hidden;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .road {
-
     padding-right: 120px;
     max-width: 992px;
     overflow: visible;
@@ -29,4 +28,4 @@
   .road {
     padding: 0 18px 120px 18px;
   }
-}
+} */
