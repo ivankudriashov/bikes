@@ -1,4 +1,20 @@
 .subheader__title {
- margin: 40px 0 50px 120px;
+ margin: 40px 0 0 0;
  max-width: 460px;
+ white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  .subheader__title {
+    margin: 40px 0 0 0;
+    max-width: 100%;
+    white-space: nowrap;
+   }
+}
+
+
+@media (max-width: 425px) {
+  .subheader__title {
+    white-space: pre-wrap;
+   }
 }

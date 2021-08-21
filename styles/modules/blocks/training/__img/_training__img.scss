@@ -1,0 +1,18 @@
+.training__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+@media (max-width: 1024px) {
+  .training__img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}

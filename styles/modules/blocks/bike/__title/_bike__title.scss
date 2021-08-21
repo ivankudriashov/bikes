@@ -1,0 +1,26 @@
+.bike__title {
+  position: absolute;
+  bottom: -44px;
+  left: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color-main);
+  margin: 0;
+}
+
+@media (max-width: 1436px) {
+  .bike__title {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 425px) {
+  .bike__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

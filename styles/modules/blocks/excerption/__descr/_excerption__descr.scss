@@ -1,0 +1,22 @@
+.excerption__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--text-color-secondary);
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .excerption__descr {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .excerption__descr {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

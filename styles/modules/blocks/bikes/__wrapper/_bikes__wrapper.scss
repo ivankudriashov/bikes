@@ -1,0 +1,12 @@
+.bikes__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 992px) {
+  .bikes__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

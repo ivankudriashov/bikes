@@ -1,0 +1,10 @@
+.road__title {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 425px) {
+  .road__title {
+    margin-bottom: 40px;
+    width: 284px;
+  }
+}

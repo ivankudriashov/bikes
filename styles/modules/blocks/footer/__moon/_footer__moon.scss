@@ -1,0 +1,11 @@
+.footer__moon {
+  width: 20px;
+  height: 20px;
+  background: url(../../../../../images/icons/dark.png);
+}
+
+@media (max-width: 768px) {
+  .footer__moon {
+    display: none;
+  }
+}

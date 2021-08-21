@@ -1,0 +1,20 @@
+.excerption__figcaption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-color-main);
+}
+
+@media (max-width: 1200px) {
+  .excerption__figcaption {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .excerption__figcaption {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

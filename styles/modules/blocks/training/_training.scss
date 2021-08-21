@@ -1,0 +1,29 @@
+.training{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 110px 1fr 1fr;
+  column-gap: 160px;
+  padding: 0 120px 120px 120px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .training {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training {
+    padding: 0 30px 120px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .training {
+    padding: 0 18px 60px 18px;
+    row-gap: 40px;
+  }
+}

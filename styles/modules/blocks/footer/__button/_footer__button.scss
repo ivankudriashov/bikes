@@ -1,0 +1,15 @@
+.footer__button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: var(--text-color-main);
+  background-color: var(--background-color-footer);
+  padding: 0;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}

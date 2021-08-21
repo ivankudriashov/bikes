@@ -8,3 +8,9 @@
   max-width: 1440px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 425px) {
+  .header {
+    padding-bottom: 0;
+  }
+}

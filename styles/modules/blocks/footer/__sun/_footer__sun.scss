@@ -1,0 +1,11 @@
+.footer__sun {
+  width: 28px;
+  height: 28px;
+  background: url(../../../../../images/icons/light.png);
+}
+
+@media (max-width: 768px) {
+  .footer__sun {
+    display: none;
+  }
+}

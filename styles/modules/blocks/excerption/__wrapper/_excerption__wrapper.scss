@@ -1,0 +1,17 @@
+.excerption__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .excerption__wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .excerption__wrapper {
+    width: 100%;
+  }
+}

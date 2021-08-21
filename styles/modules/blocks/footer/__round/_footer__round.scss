@@ -1,0 +1,13 @@
+.footer__round {
+  width: 20px;
+  height: 20px;
+  background-color: #24B47E;
+  border-radius: 50%;
+  margin: 0 2px 0 2px;
+}
+
+@media (max-width: 768px) {
+  .footer__round {
+    display: none;
+  }
+}

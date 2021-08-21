@@ -1,0 +1,25 @@
+.footer__switcher {
+  background-color: var(--switcher-background-color);
+  width: 44px;
+  height: 24px;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* @media (max-width: 768px) {
+  .footer__switcher {
+    background-color: var(--background-color-footer);
+    background: url(../../../../../images/icons/guard.png);
+  }
+}*/
+
+@media (max-width: 768px) {
+  .footer__switcher {
+    display: none;
+  }
+}
+
+

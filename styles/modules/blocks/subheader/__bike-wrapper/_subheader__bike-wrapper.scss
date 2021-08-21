@@ -1,7 +1,9 @@
 .subheader__bike-wrapper {
-  position: absolute;
-  top: 375px;
-  left: -202px;
+  position: sticky;
+  top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 440px;
   width: 100%;
   max-height: 300px;
@@ -9,5 +11,27 @@
   background-color: #F4F4F4;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
-  z-index: 6;
+  z-index: 100;
 }
+
+@media (max-width: 1320px) {
+  .subheader__bike-wrapper {
+    max-width: 340px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subheader__bike-wrapper {
+    max-width: 234px;
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 425px) {
+  .subheader__bike-wrapper {
+    z-index: 0;
+  }
+}
+
+

@@ -1,5 +1,34 @@
 .subheader__img {
   position: relative;
-  max-width: 610px;
   width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+@media (max-width: 1024px) {
+  .subheader__sign {
+    .subheader__img {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .subheader__img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media (max-width: 425px) {
+  .subheader__img {
+    max-width: 254px;
+    justify-self: end;
+  }
 }

@@ -1,0 +1,13 @@
+.footer__theme {
+  width: 136px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer__theme {
+    justify-content: flex-end;
+  }
+}

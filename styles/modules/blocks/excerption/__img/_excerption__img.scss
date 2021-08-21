@@ -1,0 +1,16 @@
+.excerption__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .excerption__img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .excerption__img {
+    width: 100%;
+  }
+}

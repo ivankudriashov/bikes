@@ -1,0 +1,22 @@
+.bike {
+  padding: 0 120px 254px;
+  display: none;
+}
+
+@media (max-width: 1436px) {
+  .bike {
+    padding: 0 120px 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bike {
+    padding: 0 30px 254px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike {
+    padding: 0 18px 254px;
+  }
+}

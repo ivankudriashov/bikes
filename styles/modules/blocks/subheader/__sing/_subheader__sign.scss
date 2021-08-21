@@ -1,9 +1,21 @@
 .subheader__sign {
   position: relative;
-  margin: 0 0 0 120px;
+  margin: 117px 0 0 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   color: var(--text-color-main);
   width: 194px;
+}
+
+@media (max-width: 1320px) {
+  .subheader__sign {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subheader__sign {
+    display: none;
+  }
 }

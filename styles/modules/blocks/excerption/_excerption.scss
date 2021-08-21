@@ -1,0 +1,27 @@
+.excerption {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  padding: 0 120px 120px 120px;
+}
+
+@media (max-width: 1024px) {
+  .excerption {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .excerption {
+    padding: 0 30px 120px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .excerption {
+    padding: 0 18px 120px 18px;
+    row-gap: 40px;
+  }
+}

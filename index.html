@@ -32,19 +32,183 @@
   </header>
   <main class="content page__block-centering">
     <section class="subheader">
-      <div class="subheader__descr">
-        <h1 class="title subheader__title">Шоссе, ТТ и Грэвел</h1>
+        <h1 class="title subheader__title">Шоссе, ТТ
+и Грэвел</h1>
+        <div class="subheader__img">
+          <img src="./images/places/subheader_place.jpg" alt="природа" class="subheader__place">
+          <div class="subheader__sticky-block">
+            <div class="subheader__bike-wrapper">
+              <img src="./images/bikes/subheader__bike.png" alt="велосипед" class="subheader__bike">
+            </div>
+          </div>
+        </div>
         <p class="subtitle subheader__subtitle">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <button class="subheader__button subheader__button_active">Подробнее</button>
         <p class="subheader__sign">Cannondale Systemsix <span class="subheader__sign-line"></span></p>
-      </div>
-      <div class="subheader__img">
-        <img src="./images/places/subheader_place.jpg" alt="природа" class="subheader__place">
-        <div class="subheader__bike-wrapper">
-          <img src="./images/bikes/subheader__bike.png" alt="велосипед" class="subheader__bike">
+    </section>
+
+    <section class="excerption">
+      <img src="./images/places/excerption_place.jpg" alt="природа" class="excerption__img">
+      <div class="excerption__wrapper">
+        <blockquote class="excerption__blockquote">
+          <p class="excerption__text">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</p>
+        </blockquote>
+        <div class="excerption__wrapper-figcaption">
+          <figcaption class="excerption__figcaption">Эдди Меркс</figcaption>
+          <p class="excerption__descr">Велогонщик</p>
         </div>
       </div>
-    </section>
+   </section>
+
+   <section class="card">
+    <div class="road">
+      <h2 class="title road__title">Шоссе</h2>
+      <p class="subtitle road__descr">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+      <div class="carousel">
+        <div>
+          <img src="./images/icons/highway.png" alt="icon" class="road__icon">
+          <img src="./images/places/place_1.jpg" alt="1" class="carousel__img">
+        </div>
+        <div>
+            <img src="./images/places/place_2.jpg" alt="2" class="carousel__img">
+        </div>
+        <div>
+          <img src="./images/places/place_2.jpg" alt="2" class="carousel__img">
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <section class="card">
+    <div class="road">
+      <h2 class="title road__title">Грэвел</h2>
+      <p class="subtitle road__descr">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+      <div class="carousel">
+        <div>
+          <img src="./images/icons/gravel.png" alt="icon" class="road__icon">
+          <img src="./images/places/place_2.jpg" alt="1" class="carousel__img">
+        </div>
+        <div>
+            <img src="./images/places/place_3.jpg" alt="2" class="carousel__img">
+        </div>
+        <div>
+          <img src="./images/places/place_3.jpg" alt="2" class="carousel__img">
+        </div>
+      </div>
+   </section>
+
+   <section class="card">
+    <div class="road">
+      <h2 class="title road__title">ТТ</h2>
+      <p class="subtitle road__descr">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный..</p>
+      <div class="carousel">
+        <div>
+          <img src="./images/icons/tt.png" alt="icon" class="road__icon">
+          <img src="./images/places/place_3.jpg" alt="1" class="carousel__img">
+        </div>
+        <div>
+            <img src="./images/places/place_4.jpg" alt="2" class="carousel__img">
+        </div>
+        <div>
+          <img src="./images/places/place_4.jpg" alt="2" class="carousel__img">
+      </div>
+      </div>
+    </div>
+   </section>
+
+   <div class="bikes">
+    <div class="bikes__wrapper">
+      <h2 class="title bikes__title">Велосипеды</h2>
+      <ul class="bikes__menu">
+        <li class="bikes__menu-item bikes__menu-item_active">Шоссе</li>
+        <li class="bikes__menu-item">Грэвел</li>
+        <li class="bikes__menu-item">TT</li>
+      </ul>
+      <select class="bikes__menu">
+        <option value="highway" class="bikes__menu-item bikes__menu-item_active" selected>Шоссе</option>
+        <option value="gravel" class="bikes__menu-item">Грэвел</option>
+        <option value="tt" class="bikes__menu-item">TT</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="bike bike_active">
+    <ul class="bike__wrapper">
+      <div>
+        <li class="bike__item">
+          <a href="#" class="bike__link"><img src="./images/bikes/bike_1.png" alt="велосипед" class="bike__img"></a>
+          <p class="bike__title">Cervelo Caledonia-5</p>
+        </li>
+      </div>
+      <div>
+        <li class="bike__item">
+          <a href="#" class="bike__link"><img src="./images/bikes/bike_1.png" alt="велосипед" class="bike__img"></a>
+          <p class="bike__title">Cervelo Caledonia-5</p>
+        </li>
+      </div>
+      <div>
+        <li class="bike__item">
+          <a href="#" class="bike__link"><img src="./images/bikes/bike_1.png" alt="велосипед" class="bike__img"></a>
+          <p class="bike__title">Cervelo Caledonia-5</p>
+        </li>
+      </div>
+    </ul>
+
+  </section>
+
+   <section class="training">
+    <h2 class="title training__title">Тренировки</h2>
+    <img src="./images/places/training_place.jpg" alt="природа" class="training__img">
+    <p class="subtitle training__subtitle">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+    <ul class="training__items">
+      <li class="training__item">
+        <a href="https://www.komoot.com" class="training__link">Komoot</a>
+      </li>
+      <li class="training__item">
+        <a href="https://www.strava.com" class="training__link">Strava</a>
+      </li>
+    </ul>
+   </section>
   </main>
+
+  <footer class="footer">
+    <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+    <form action="#" class="footer__form">
+      <input name="email" placeholder="Ваш E-mail" type="email" class="footer__input">
+      <button type="submit" class="footer__button">ok</button>
+    </form>
+    <div class="footer__wrapper">
+      <p class="footer__copyright">© Road Club 2021</p>
+      <div class="footer__theme">
+        <div class="footer__logo"></div>
+        <div class="footer__sun"></div>
+        <div class="footer__switcher">
+          <div class="footer__round"></div>
+        </div>
+        <div class="footer__moon"></div>
+      </div>
+    </div>
+  </footer>
+
+  <template id="menu-template-row">
+    <ul class="bikes__menu">
+      <li class="bikes__menu-item bikes__menu-item_active">Шоссе</li>
+      <li class="bikes__menu-item">Грэвел</li>
+      <li class="bikes__menu-item">TT</li>
+    </ul>
+  </template>
+
+  <template id="menu-template-list">
+    <select class="bikes__menu">
+      <option class="bikes__menu-item bikes__menu-item_active" selected>Шоссе</option>
+      <option class="bikes__menu-item">Грэвел</option>
+      <option class="bikes__menu-item">TT</option>
+    </select>
+  </template>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./scripts/slick.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 </html>

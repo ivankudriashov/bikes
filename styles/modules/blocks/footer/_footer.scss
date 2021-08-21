@@ -1,0 +1,18 @@
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  padding: 80px 120px 60px 120px;
+  background: var(--background-color-footer);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 30px 60px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    padding: 40px 18px 25px 18px;
+  }
+}

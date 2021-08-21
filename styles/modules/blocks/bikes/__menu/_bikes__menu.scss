@@ -1,0 +1,33 @@
+.bikes__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+select.bikes__menu {
+  display: none;
+}
+
+
+@media (max-width: 425px) {
+  .bikes__menu {
+    color: var(--text-color-main);
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 114px;
+    height: 30px;
+    background-color: var(--background-color);
+  }
+
+  select.bikes__menu {
+    display: block;
+  }
+
+  ul.bikes__menu {
+    display: none;
+  }
+}
