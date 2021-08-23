@@ -3,7 +3,6 @@
 }
 
 .swiper-container {
-  overflow-y: visible;
 }
 
 .image-slider__wrapper {
@@ -55,7 +54,7 @@
 }
 
 .image-slider .swiper-pagination {
-  bottom: -15px;
+  bottom: 0;
 }
 
 .image-slider .swiper-pagination-bullet {
@@ -63,5 +62,5 @@
   height: 4px;
   line-height: 20px;
   font-size: 14px;
-  background-color: #151515;;
+  background-color: #fff;;
 }

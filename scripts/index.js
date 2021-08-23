@@ -33,15 +33,22 @@ hamburger.addEventListener('click', () => {
 // slider
 
 new Swiper('.image-slider', {
+
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',
   },
+  spaceBetween: 30,
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 1.75,
+    }
   },
+
 });
 
 
