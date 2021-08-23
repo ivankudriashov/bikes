@@ -15,13 +15,13 @@
     <nav class="header__menu-wrapper">
       <ul class="header__menu">
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Покрытия и градиенты</a>
+          <a href="#gradients" class="header__menu-link">Покрытия и градиенты</a>
         </li>
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Велосипеды</a>
+          <a href="#bikes-img" class="header__menu-link">Велосипеды</a>
         </li>
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Тренировки</a>
+          <a href="#training" class="header__menu-link">Тренировки</a>
         </li>
         <li class="theme">
           <div class="theme__sun"></div>
@@ -63,44 +63,41 @@
           <p class="excerption__text">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</p>
         </blockquote>
         <div class="excerption__wrapper-figcaption">
-          <figcaption class="excerption__figcaption">Эдди Меркс</figcaption>
+          <div class="excerption__figcaption">Эдди Меркс</div>
           <p class="excerption__descr">Велогонщик</p>
         </div>
       </div>
    </section>
 
-   <section class="card card_active">
+   <section class="card card_active" id="gradients">
     <div class="road">
       <h2 class="title road__title">Шоссе</h2>
       <p class="subtitle road__descr">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
 
-      <div class="image-slider swiper-container">
+        <div class="image-slider swiper-container">
 
-        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__wrapper swiper-wrapper">
 
-          <div class="image-slider__slide swiper-slide">
-            <div class="image-slider__image">
-              <img src="./images/places/place_1.jpg" alt="1">
+            <div class="image-slider__slide swiper-slide">
+                <img src="./images/places/place_1.jpg" alt="1">
             </div>
-          </div>
 
-          <div class="image-slider__slide swiper-slide">
-            <div class="image-slider__image">
-              <img src="./images/places/place_2.jpg" alt="1">
+            <div class="image-slider__slide swiper-slide">
+                <img src="./images/places/place_2.jpg" alt="1">
             </div>
+
           </div>
 
         </div>
 
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
-        <div class="swiper-pagination"></div>
-      </div>
 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
     </div>
+
 
    </section>
 
@@ -119,7 +116,7 @@
         <div>
           <img src="./images/places/place_3.jpg" alt="2" class="carousel__img">
         </div>
-      </div>
+    </div>
    </section>
 
    <section class="card">
@@ -141,7 +138,7 @@
     </div>
    </section>
 
-   <div class="bikes">
+   <div class="bikes" id="bikes-img">
     <div class="bikes__wrapper">
       <h2 class="title bikes__title">Велосипеды</h2>
       <ul class="bikes__menu">
@@ -226,7 +223,7 @@
     </ul>
   </section>
 
-   <section class="training">
+   <section class="training" id="training">
     <h2 class="title training__title">Тренировки</h2>
     <img src="./images/places/training_place.jpg" alt="природа" class="training__img">
     <p class="subtitle training__subtitle">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
@@ -243,8 +240,8 @@
 
   <footer class="footer">
     <h2 class="footer__title">Подпишитесь на рассылку —</h2>
-    <form action="#" class="footer__form">
-      <input name="email" placeholder="Ваш E-mail" type="email" class="footer__input">
+    <form action="#" class="footer__form" name="form">
+      <input name="email" placeholder="Ваш E-mail" type="email" class="footer__input" required>
       <button type="submit" class="footer__button">ok</button>
     </form>
     <div class="footer__wrapper">

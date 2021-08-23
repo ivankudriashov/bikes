@@ -37,6 +37,7 @@ new Swiper('.image-slider', {
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',
+    disabledClass: '.swiper-button-disabled',
   },
   spaceBetween: 30,
 
@@ -134,3 +135,19 @@ select.addEventListener('change', (e) => {
   }
 })
 
+//input
+
+const formButton = document.querySelector('.footer__button');
+const input = document.querySelector('.footer__input');
+const form = document.querySelector('.footer__form');
+
+input.addEventListener('focus', () => {
+  formButton.classList.add('footer__button_active');
+})
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  input.value = '';
+  input.placeholder = 'Круто!';
+  formButton.classList.remove('footer__button_active');
+})

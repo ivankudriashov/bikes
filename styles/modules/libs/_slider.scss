@@ -15,14 +15,14 @@
 .image-slider__image {
 }
 
-.image-slider__image img {
+.image-slider__slide img {
   max-width: 100%;
 }
 
-.image-slider .swiper-button-prev::after {
+.swiper-button-prev {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 120px;
   border: none;
   background-color: var(--arrow-background-color);
   padding: 0;
@@ -30,16 +30,19 @@
   height: 50px;
   border-radius: 50%;
   color: var(--arrow-color);
-  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  &::after {
+    font-size: 16px;
+  }
 }
 
-.image-slider .swiper-button-next::after {
+.swiper-button-next {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: 190px;
+  right: auto;
   border: none;
   background-color: var(--arrow-background-color);
   padding: 0;
@@ -51,6 +54,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &::after {
+    font-size: 16px;
+  }
 }
 
 .image-slider .swiper-pagination {
