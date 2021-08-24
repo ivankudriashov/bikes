@@ -1,0 +1,12 @@
+.theme__moon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .theme__moon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../../../../images/icons/dark.png);
+  }
+}

@@ -31,36 +31,60 @@ hamburger.addEventListener('click', () => {
 })
 
 // slider
-$('.carousel').slick({
-  variableWidth: true,
-  infinite: false,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  speed: 1200,
-  adaptiveHeight: true,
-  prevArrow: '<button type="button" class="slick-prev"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="icon" d="M9 1L2 9L9 17" stroke-width="2"/></svg></button>',
-  nextArrow: '<button type="button" class="slick-next"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="icon" d="M1 17L8 9L1 0.999999" stroke-width="2"/></svg></button>',
-  responsive: [
-      {
-          breakpoint: 992,
-          settings: {
-            variableWidth: false,
-            slidesToShow: 1
-          }
-      }
-  ]
+
+const swiperGradients = new Swiper('.image-slider', {
+
+  navigation: {
+    prevEl: '.swiper-button-prev-uniq',
+    nextEl: '.swiper-button-next-uniq',
+  },
+  observer: true,
+  observeParents: true,
+
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 1.75,
+      spaceBetween: 30,
+    }
+  },
+
 });
 
-if (screen.width <= 992) {
-	$('.bike__wrapper').slick({
-    variableWidth: false,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-  });
-}
+const swiperBikes = new Swiper('.bike-slider', {
+  spaceBetween: 30,
+  observer: true,
+  observeParents: true,
+  pagination: {
+    el: '.swiper-pagination-uniq',
+    type: 'bullets',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination-uniq',
+        type: 'bullets',
+      },
+    },
+    1200: {
+      slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination-uniq',
+        type: 'bullets',
+      },
+    },
+    1472: {
+      slidesPerView: 3,
+    }
+  },
+
+});
 
 //dark theme
 
@@ -81,10 +105,23 @@ themeSwitcher.addEventListener('click', () => {
   }
 })
 
+const themeSwitcherHeader = document.querySelector('.theme__switcher');
+
+themeSwitcherHeader.addEventListener('click', () => {
+  if (!page.classList.contains('page_theme_dark')) {
+    page.classList.add('page_theme_dark');
+    themeSwitcherHeader.classList.add('theme__switcher_active');
+  } else {
+    page.classList.remove('page_theme_dark');
+    themeSwitcherHeader.classList.remove('theme__switcher_active');
+  }
+})
+
 // bikes cards
 
 const cards = document.querySelectorAll('.card');
 const cardsMenuButtons = document.querySelectorAll('.bikes__menu-item');
+const bike = document.querySelectorAll('.bike');
 
 function hideContent() {
   cards.forEach(item => {
@@ -94,11 +131,16 @@ function hideContent() {
   cardsMenuButtons.forEach(item => {
       item.classList.remove('bikes__menu-item_active');
   });
+
+  bike.forEach(item => {
+    item.classList.remove('bike_active');
+  });
 }
 
 function showContent(i = 0) {
   cards[i].classList.add('card_active');
   cardsMenuButtons[i].classList.add('bikes__menu-item_active');
+  bike[i].classList.add('bike_active');
 }
 
 hideContent();
@@ -124,4 +166,21 @@ select.addEventListener('change', (e) => {
     hideContent();
     showContent(2);
   }
+})
+
+//input
+
+const formButton = document.querySelector('.footer__button');
+const input = document.querySelector('.footer__input');
+const form = document.querySelector('.footer__form');
+
+input.addEventListener('focus', () => {
+  formButton.classList.add('footer__button_active');
+})
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  input.value = '';
+  input.placeholder = 'Круто!';
+  formButton.classList.remove('footer__button_active');
 })

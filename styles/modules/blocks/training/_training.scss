@@ -1,10 +1,17 @@
 .training{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 110px 1fr 1fr;
   column-gap: 160px;
-  padding: 0 120px 120px 120px;
+  padding: 254px 120px 120px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1436px) {
+  .training {
+    padding: 210px 120px 210px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -17,13 +24,22 @@
 
 @media (max-width: 768px) {
   .training {
-    padding: 0 30px 120px 30px;
+    padding: 210px 30px 120px;
   }
 }
 
 @media (max-width: 425px) {
   .training {
-    padding: 0 18px 60px 18px;
+    padding: 144px 18px 60px;
     row-gap: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 104px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #E3E3E3;
+      width: 284px;
+    }
   }
 }
