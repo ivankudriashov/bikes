@@ -32,26 +32,59 @@ hamburger.addEventListener('click', () => {
 
 // slider
 
-new Swiper('.image-slider', {
+const swiperGradients = new Swiper('.image-slider', {
 
   navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
-    disabledClass: '.swiper-button-disabled',
+    prevEl: '.swiper-button-prev-uniq',
+    nextEl: '.swiper-button-next-uniq',
   },
-  spaceBetween: 30,
+  observer: true,
+  observeParents: true,
+
 
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     992: {
       slidesPerView: 1.75,
+      spaceBetween: 30,
     }
   },
 
 });
 
+const swiperBikes = new Swiper('.bike-slider', {
+  spaceBetween: 30,
+  observer: true,
+  observeParents: true,
+  pagination: {
+    el: '.swiper-pagination-uniq',
+    type: 'bullets',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination-uniq',
+        type: 'bullets',
+      },
+    },
+    1200: {
+      slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination-uniq',
+        type: 'bullets',
+      },
+    },
+    1472: {
+      slidesPerView: 3,
+    }
+  },
+
+});
 
 //dark theme
 
