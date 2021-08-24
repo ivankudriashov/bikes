@@ -1,0 +1,15 @@
+.theme {
+  display: none;;
+}
+
+@media (max-width: 768px) {
+  .theme {
+    position: absolute;
+    bottom: 36px;
+    width: 136px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

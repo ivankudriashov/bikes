@@ -1,15 +1,26 @@
 .bikes {
-  padding: 0 120px 120px 120px;
+  padding: 120px 120px 120px;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .bikes {
-    padding: 0 30px 80px 30px;
+    padding: 120px 30px 80px;
   }
 }
 
 @media (max-width: 425px) {
   .bikes {
-    padding: 0 18px 80px 18px;
+    padding: 120px 18px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #E3E3E3;
+      width: 284px;
+    }
   }
 }
+

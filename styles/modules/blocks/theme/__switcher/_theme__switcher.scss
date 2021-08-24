@@ -1,0 +1,16 @@
+.theme__switcher {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .theme__switcher {
+    background-color: var(--switcher-background-color);
+    width: 44px;
+    height: 24px;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

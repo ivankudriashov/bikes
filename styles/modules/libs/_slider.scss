@@ -1,0 +1,224 @@
+//slider road surface
+
+.image-slider__slide {
+  position: relative;
+}
+
+.image-slider__icon{
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+}
+
+.image-slider__img {
+  max-width: 100%;
+}
+
+.swiper-buttons {
+  display: flex;
+  padding-top: 50px;
+}
+
+.swiper-button-prev-uniq {
+  margin-right: 20px;
+  border: none;
+  background-color: var(--arrow-background-color);
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  svg path {
+    stroke: var(--arrow-color);
+  }
+}
+
+.swiper-button-next-uniq {
+  border: none;
+  background-color: var(--arrow-background-color);
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--arrow-color);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  svg path {
+    stroke: var(--arrow-color);
+  }
+}
+
+@media (max-width: 425px) {
+  .image-slider__icon{
+    width: 70px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .swiper-buttons {
+    padding-top: 0;
+    justify-self: end;
+    align-self: start;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media (max-width: 425px) {
+  .swiper-buttons {
+    padding-top: 7px;
+  }
+}
+
+@media (max-width: 425px) {
+  .swiper-button-prev-uniq {
+    margin-right: 10px;
+    background-color: var(--arrow-background-color);
+    border-radius: 50%;
+    color: var(--arrow-color);
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 4.5px;
+      height: 10px;
+    }
+
+  }
+}
+
+@media (max-width: 425px) {
+  .swiper-button-next-uniq {
+    background-color: var(--arrow-background-color);
+    border-radius: 50%;
+    color: var(--arrow-color);
+    width: 24px;
+    height: 24px;
+    svg {
+      width: 4.5px;
+      height: 10px;
+    }
+  }
+}
+
+
+//slider bikes
+
+.bike-slider {
+  height: 408px;
+  padding-top: 20px;
+}
+
+.bike-slider__slide {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  background-color: #F4F4F4;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bike-slider__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bike-slider__img {
+  width: 340px;
+  height: 340px;
+}
+
+.bike-slider__title {
+  position: absolute;
+  bottom: -44px;
+  left: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color-main);
+  margin: 0;
+}
+
+.swiper-pagination-uniq {
+  text-align: center;
+  .swiper-pagination-bullet {
+    margin-right: 7px;
+    width: 6px;
+    height: 6px;
+    background-color: #CACACA;
+    opacity: 1;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #151515;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike-slider {
+    height: 328px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike-slider__slide {
+    width: 284px;
+    height: 306px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike-slider__img {
+    width: 254px;
+    height: 254px;
+  }
+}
+
+@media (max-width: 1436px) {
+  .bike-slider__title {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #151515;
+  }
+}
+
+@media (max-width: 425px) {
+  .bike-slider__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .swiper-pagination-uniq {
+    .swiper-pagination-bullet {
+      margin-right: 5px;
+      width: 4px;
+      height: 4px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
