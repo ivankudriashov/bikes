@@ -16,4 +16,4 @@ HTML5, CSS3, Grid layout, Flexbox, Javascript, Swiper slider
 
 **Ссылка**
 
-https://ivankudriashov.github.io/
+https://ivankudriashov.github.io/bikes/
